@@ -1,0 +1,9 @@
+#book {
+    color: white;
+    background-color: green;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
