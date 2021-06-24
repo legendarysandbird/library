@@ -19,20 +19,22 @@
 }
 
 #book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
     color: white;
     background-color: green;
     width: 100px;
     height: 150px;
     margin: 20px;
     float: left;
-    text-align: center;
 }
 
 #remove {
     position: relative;
-    top: 66px;
 
-    float: left;
 
     background-color: red;
     border: black;
@@ -46,9 +48,7 @@
 
 #read {
     position: relative;
-    float: left;
     height: 20px;
     width: 20px;
     margin: 5px;
-    top: 80px;
 }

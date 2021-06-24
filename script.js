@@ -9,7 +9,6 @@ function Book(author, title, pages) {
 
 Book.prototype.toggleRead = function() {
     this.read = !this.read;
-    console.log(this.read);
 }
 
 function addBookToLibrary() {
@@ -63,4 +62,3 @@ let newButton = document.getElementById("new");
 newButton.addEventListener("click", () => {
     addBookToLibrary();
 })
-
