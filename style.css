@@ -1,3 +1,23 @@
+#new {
+    margin: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: black;
+}
+
+#new:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+#bookshelf {
+    background-color: brown;
+    width: 550px;
+    height: 800px;
+}
+
 #book {
     color: white;
     background-color: green;
@@ -6,4 +26,19 @@
     margin: 20px;
     float: left;
     text-align: center;
+}
+
+#remove {
+    position: relative;
+    top: 50px;
+    left: 12px;
+
+    background-color: red;
+    border: black;
+    border-style: solid;
+}
+
+#remove:hover {
+    background-color: darkred;
+    color: white;
 }

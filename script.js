@@ -20,11 +20,22 @@ function addBookToLibrary() {
 function displayLibrary() {
     let bookshelf = document.getElementById("bookshelf");
     bookshelf.innerHTML = "";
-    
+
     myLibrary.forEach((book) => {
         let newBook = document.createElement("div");
         newBook.id = "book";
         newBook.textContent = `${book.title} by ${book.author} is ${book.pages} pages.`
+
+        let remove = document.createElement("button");
+        remove.id = "remove";
+        remove.textContent = "Remove";
+        remove.addEventListener("click", () => {
+            bookshelf.removeChild(newBook);
+            let index = myLibrary.indexOf((book));
+            myLibrary.splice(index, 1);
+        })
+        newBook.appendChild(remove);
+
         bookshelf.appendChild(newBook);
     });
         
